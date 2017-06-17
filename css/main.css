@@ -118,17 +118,17 @@ div.Card {
   bottom: 0px;
   right: 0px;
   margin: auto;
-  width: 1000px;
-  height: 600px;
+  width: 100%;--1000px;
+  height: 100%;--600px;
   background-color: white;
   
-  border: 4px solid black;
-  border-radius: 10px;
-  padding: 3px;
+  --border: 4px solid black;
+  --border-radius: 10px;
+  padding: 0px;--3px;
+  --margin:10px;
 }
 
 header {
-  background-color: white;
   border-bottom: 2px solid gray;
   padding-bottom: 3px;  
 }
@@ -179,13 +179,18 @@ footer {
   position:absolute;
   bottom:0px;
   left:0px;
+  right:0px;
   padding:10px;
-  font-size:10px;
-  font-weight:bold;
+  margin-right:3px;
+  margin-left:3px;
+  border-top: 2px solid gray;
+  padding-top: 3px;
 }
 div.Impressum {
   float:left;
   margin-right:200px;
+  font-size:10px;
+  font-weight:bold;
 }
 
 div.SocialMedia {
@@ -224,6 +229,14 @@ div.SocialMedia:hover {
   margin:auto;
   margin-top:80px;
   width:920px;
+}
+
+table.Contact {
+  width:100%;
+}
+
+.Contact td {
+  width:50%;
 }
 
 /* ==========================================================================
