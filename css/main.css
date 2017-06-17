@@ -266,6 +266,10 @@ div.SocialMedia:hover {
 	display: inline;
 }
 
+.Video iframe {
+	margin-bottom:20px;
+}
+
 table.Contact {
   width:100%;
 }
@@ -302,8 +306,59 @@ table.about {
 
 .contactColumn {
 	text-align:center;
+	padding-top: 80px;
+	font-size:19px;
 }
 
+.contactColumn a {
+	font-size:30px;
+	color:black;
+}
+
+.contactColumn ul {
+	list-style:none;
+}
+
+@media screen and (max-width: 1400px) {
+    p.aboutText {
+    margin-left:20px;
+    }
+    
+    img.aboutImage {
+    margin-left:100px;
+    }
+    
+    .aboutText {
+    max-width: 650px;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    p.aboutText {
+    margin-left:20px;
+    }
+    
+    img.aboutImage {
+    margin-left:80px;
+    }
+    
+    .aboutText {
+    max-width: 500px;
+    }
+}
+@media screen and (max-width: 800px) {
+    p.aboutText {
+    margin-left:10px;
+    }
+    
+    img.aboutImage {
+    margin-left:20px;
+    }
+    
+    .aboutText {
+    max-width: 400px;
+    }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
