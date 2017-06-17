@@ -34,6 +34,7 @@
           </header>
           
           <?php
+          /*
           $action=$_REQUEST['action'];
           if ($action=="")    // display the contact form 
           {
@@ -72,6 +73,7 @@
           
           echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
           }
+          */
           ?>
           
           <section>
