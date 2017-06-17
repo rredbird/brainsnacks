@@ -24,11 +24,13 @@
         <div class="Card">
           <header>
             <a href="."><img class="logo" src="./img/BrainsnacksLogo.png"></a>
-            <ul>
-              <a href="./about"><li class="about">About</li></a>
-              <a href="./videos"><li class="videos">Videos</li></a>
-              <a href="./contact"><li class="contact">Contact</li></a>
-            </ul>                          
+            <nav>
+            	<ul>
+              		<a href="./about"><li class="about">About</li></a>
+              		<a href="./videos"><li class="videos">Videos</li></a>
+              		<a href="./contact"><li class="contact">Contact</li></a>
+            	</ul>
+            </nav>                         
           </header>
           
           <?php
@@ -77,20 +79,22 @@
               Bremer Stra&szlig;e 68<br>
               10551 Berlin              
             </div>
-            <div class="SocialMedia wiggle-me">
-              <a href=""><img src="./img/SocialMedia/facebook.png" class="SocialMedia"/></a>                            
-            </div>
-            <div class="SocialMedia wiggle-me">
-              <a href=""><img src="./img/SocialMedia/instagram.jpg" class="SocialMedia"/></a>                            
-            </div>
-            <div class="SocialMedia wiggle-me">
-              <a href=""><img src="./img/SocialMedia/patreon.png" class="SocialMedia"/></a>                            
-            </div>
-            <div class="SocialMedia wiggle-me">
-              <a href=""><img src="./img/SocialMedia/youtube.png" class="SocialMedia"/></a>                            
-            </div>
-            <div class="SocialMedia wiggle-me">
-              <a href=""><img src="./img/SocialMedia/twitter.png" class="SocialMedia"/></a>                            
+            <div class="SocialMediaWrapper">
+        	    <div class="SocialMedia wiggle-me">
+    	          <a href="https://www.facebook.com/brainsnacks.science/" target="_blank"><img src="./img/SocialMedia/facebook.png" class="SocialMedia"/></a>                            
+	            </div>
+            	<div class="SocialMedia wiggle-me">
+        	      <a href="https://www.instagram.com/brainsnacks.science/" target="_blank"><img src="./img/SocialMedia/instagram.jpg" class="SocialMedia"/></a>                            
+    	        </div>
+	            <div class="SocialMedia wiggle-me">
+            	  <a href="https://www.patreon.com/brainsnacks" target="_blank"><img src="./img/SocialMedia/patreon.png" class="SocialMedia"/></a>                            
+        	    </div>
+    	        <div class="SocialMedia wiggle-me">
+	              <a href="https://www.youtube.com/brainsnacks" target="_blank"><img src="./img/SocialMedia/youtube.png" class="SocialMedia"/></a>                            
+            	</div>
+        	    <div class="SocialMedia wiggle-me">
+    	          <a href="https://twitter.com/BrainSnacksNews" target="_blank"><img src="./img/SocialMedia/twitter.png" class="SocialMedia"/></a>                            
+	            </div>
             </div>
           </footer>        
         </div>
