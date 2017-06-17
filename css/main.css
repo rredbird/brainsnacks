@@ -100,12 +100,12 @@ textarea {
     src: url("../content/Quicksand-Light.ttf") format("truetype");
 }
 @font-face {
-    font-family: "BrainsnacksFont2";
-    src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
+    font-family: "BrainsnacksLato";
+    src: url("./content/lato-Lite.ttf") format("truetype");
 }
 
 html {
-  font-family: BrainsnacksQuicksand, "Times New Roman", "Avenir Next";
+  font-family: BrainsnacksQuicksand, BrainsnacksLato, "Avenir Next";
   overflow-y:hidden;
 }
 

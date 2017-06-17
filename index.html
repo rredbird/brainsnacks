@@ -32,50 +32,6 @@
             	</ul>
             </nav>                         
           </header>
-          <!--
-          <?php
-          /*
-          $action=$_REQUEST['action'];
-          if ($action=="")    // display the contact form 
-          {
-          printc('empty action');
-          } 
-          if ($action=="sendMessage")               // send the submitted data 
-          {
-          $name=$_REQUEST['name'];
-          $email=$_REQUEST['email'];
-          $message=$_REQUEST['message'];
-          printc($name);
-          if (($name=="")||($email=="")||($message==""))
-          {
-          echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-          }
-          else
-          {		
-          $from="From: $name<$email>\r\nReturn-path: $email";
-          $subject="Message sent using your contact form";
-          printc($subject);
-          //mail("robin.ruth.tub@gmail.com", $subject, $message, $from);
-          printc('mail send');
-          }
-          }
-          if ($action=='newsletterSubscribe') {
-          	$email=$_REQUEST['email'];
-          	$email .= "\r\n";
-          	$filename = "../newsletter/newsletter.txt";
-          	file_put_contents ( $filename , $email, FILE_APPEND);
-          }
-          
-          function printc( $data ) {
-          $output = $data;
-          if ( is_array( $output ) )
-          $output = implode( ',', $output);
-          
-          echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
-          }
-          */
-          ?>
-          -->
           <section>
           	<?php echo $content; ?>
           </section>
