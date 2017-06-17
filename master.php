@@ -35,12 +35,11 @@
           
           <?php
           $action=$_REQUEST['action'];
-          printc($action);
           if ($action=="")    // display the contact form 
           {
           printc('empty action');
           } 
-          else                // send the submitted data 
+          if ($action=="sendMessage")               // send the submitted data 
           {
           $name=$_REQUEST['name'];
           $email=$_REQUEST['email'];
@@ -55,9 +54,15 @@
           $from="From: $name<$email>\r\nReturn-path: $email";
           $subject="Message sent using your contact form";
           printc($subject);
-          mail("robin.ruth.tub@gmail.com", $subject, $message, $from);
+          //mail("robin.ruth.tub@gmail.com", $subject, $message, $from);
           printc('mail send');
           }
+          }
+          if ($action=='newsletterSubscribe') {
+          	$email=$_REQUEST['email'];
+          	$email .= "\r\n";
+          	$filename = "../newsletter/newsletter.txt";
+          	file_put_contents ( $filename , $email, FILE_APPEND);
           }
           
           function printc( $data ) {
@@ -75,7 +80,7 @@
           <footer>
             <div class="Impressum">
               Impressum:<br>
-              Cl&auml;rchen Menzen<br>
+              Clara Menzen<br>
               Bremer Stra&szlig;e 68<br>
               10551 Berlin              
             </div>

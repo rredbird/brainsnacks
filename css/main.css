@@ -96,12 +96,16 @@ textarea {
    ========================================================================== */
 
 @font-face {
-    font-family: "BrainsnacksFont";
+    font-family: "BrainsnacksQuicksand";
+    src: url("../content/Quicksand-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "BrainsnacksFont2";
     src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
 }
 
 html {
-  font-family: BrainsnacksFont, "Times New Roman", "Avenir Next";
+  font-family: BrainsnacksQuicksand, "Times New Roman", "Avenir Next";
   overflow-y:hidden;
 }
 
@@ -249,19 +253,16 @@ div.SocialMedia:hover {
   animation: wiggle .4s 9;
 }
 
-.Video div {
-  width: 306px;
-  float:left;
-}
-.Video div p {
-  width: 280px;
-  text-align:justify;
+.Video {
+  margin-top:80px;
+  width:100%;
+  text-align:center;
 }
 
-.Video {
-  margin:auto;
-  margin-top:80px;
-  width:920px;
+.Video>div {
+	width: 452px;
+	height: 400px;
+	display: inline;
 }
 
 table.Contact {
@@ -270,6 +271,36 @@ table.Contact {
 
 .Contact td {
   width:50%;
+}
+
+p.aboutText {
+	margin-left:30px;
+	font-size:20px;
+}
+
+img.aboutImage {
+	height:140px;
+	float:left;
+	margin:10px;
+	margin-left:300px;
+}
+
+.aboutText {
+	float:left;
+	max-width: 800px;
+}
+
+table.about {
+	margin-top:90px;
+}
+
+.contactText {
+	width:500px;
+	margin:auto;
+}
+
+.contactColumn {
+	text-align:center;
 }
 
 /* ==========================================================================
