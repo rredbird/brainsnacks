@@ -167,6 +167,7 @@ header li {
   color: gray;
   padding:10px;
   cursor:default;
+  font-size:22px;
 }
 
 header a {
