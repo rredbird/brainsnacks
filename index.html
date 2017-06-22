@@ -12,7 +12,10 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/desktop.css">
+        <link rel="stylesheet" href="css/mobile-portrait.css">
+        <link rel="stylesheet" href="css/mobile-landscape.css">
+        <link rel="stylesheet" href="css/desktop.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -24,16 +27,25 @@
         <div class="Card">
           <header>
             <!--<a href=".">--><img class="logo" src="./img/BrainsnacksLogo.png"><!--</a>-->
-            <nav>
+            <img class="logoMobile" src="./img/BrainsnacksLogo.png">
+            <nav class="navMobile">
             	<ul>
               		<!--<a href="./about">--><li class="about">About</li><!--</a>-->
               		<!--<a href="./videos">--><li class="videos">Videos</li><!--</a>-->
               		<!--<a href="./contact">--><li class="contact">Contact</li><!--</a>-->
+              		<li class="ImpressumMobile">
+              		<div class="ImpressumMobile">
+              		Impressum:<br>
+              		Clara Menzen<br>
+              		Bremer Stra&szlig;e 68<br>
+              		10551 Berlin              
+              		</div>
+              		</li>
             	</ul>
             </nav>                         
           </header>
           <section>
-          	<?php echo $content; ?>
+          	<!--?php echo $content; ?-->
           </section>
           <footer>
             <div class="Impressum">

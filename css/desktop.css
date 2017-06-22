@@ -115,6 +115,8 @@ body {
   position: relative;
 }
 
+@media (min-width:500px) {
+
 div.Card {
   position:absolute;
   top: 0px;
@@ -151,6 +153,13 @@ header img {
     padding-left: 110px;
     height:100px;
     padding-top:5px;
+    width:auto;
+}
+.logo{
+	display:inline;
+}
+.logoMobile {
+	display:none;
 }
 
 header ul {
@@ -216,12 +225,18 @@ footer {
   margin-left:3px;
   --border-top: 2px solid gray;
   padding-top: 3px;
+  height: auto;
 }
 div.Impressum {
+	display:inline;
   float:left;
   --margin-right:200px;
   font-size:10px;
   font-weight:bold;
+}
+
+.ImpressumMobile {
+	display:none;
 }
 
 div.SocialMediaWrapper {
@@ -233,7 +248,7 @@ div.SocialMediaWrapper {
 div.SocialMedia {
   display:inline;
   padding-top:5px;
-  --float:left;
+  /* float: right; */
 }
 
 img.SocialMedia {
@@ -261,13 +276,14 @@ div.SocialMedia:hover {
 }
 
 .Video>div {
-	width: 452px;
+	--width: 452px;
 	height: 400px;
-	display: inline;
 }
 
 .Video iframe {
 	margin-bottom:20px;
+	width:452px;--calc((100% / 3) - 20px);
+	height:252px;
 }
 
 table.Contact {
@@ -288,15 +304,30 @@ img.aboutImage {
 	float:left;
 	margin:10px;
 	margin-left:300px;
+	/* width: 300px; */
 }
 
-.aboutText {
+.aboutDesktopColumn {
+	display:inline;
+}
+
+.aboutMobileRow {
+	display:none;
+}
+
+.aboutMobileRow>td {
+}
+
+p.aboutText {
 	float:left;
 	max-width: 800px;
+	text-align:left;
+	width: 100%;
 }
 
 table.about {
 	margin-top:90px;
+	width: 90%;
 }
 
 .contactText {
@@ -317,6 +348,11 @@ table.about {
 
 .contactColumn ul {
 	list-style:none;
+}
+
+.MainPageVideo {
+	width:600px;
+	height:335px; 
 }
 
 @media screen and (max-width: 1400px) {
@@ -358,6 +394,96 @@ table.about {
     .aboutText {
     max-width: 400px;
     }
+}
+
+@media only screen and (max-width: 700px) {
+    div.Card {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    width: 100%;--1000px;
+    height: 100%;--600px;
+    background-color: white;
+    
+    --border: 4px solid black;
+    --border-radius: 10px;
+    padding: 0px;--3px;
+    --margin:10px;
+    }
+     
+    header {
+    
+    --border-bottom: 2px solid gray;
+    padding-bottom: 3px;
+    }
+    
+    header img {
+    --border-right: 2px solid gray;
+    padding-right: 5px;
+    padding-left: 15px;
+    cursor: pointer;
+    height:80px;
+    padding-top:15px;
+    }
+    
+    header ul {
+    --display:none;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 22px;
+    padding: 0;
+    --float: right;
+    }
+    
+    header li {
+    display: inline;
+    text-decoration: none;
+    color: gray;
+    padding:10px;
+    cursor:default;
+    font-size:22px;
+    }
+    
+    header a {
+    text-decoration: none;
+    font-size:22px;
+    }
+    
+    header li:hover {
+    background-color: lightgray;
+    color: white;
+    }
+    
+    header.active {
+    background-color: gray;
+    color: white;
+    }
+    
+    
+    .MainPageVideo {
+    	width:90vw;
+    	height:50vh; 
+    }
+    
+    .Video {
+    width:600px;
+    height:335px;
+    }
+
+    div.SocialMediaWrapper {
+    	text-align:right;
+    	padding-left: 20px;
+    }
+	
+	img.SocialMedia {
+  		width:38px;
+  		height:38px;
+  		padding-right:10px;
+	}
+}
 }
 /* ==========================================================================
    Helper classes
