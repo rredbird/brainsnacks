@@ -6,17 +6,22 @@ var menuOpen = false;
 $(document).ready(function () {
 	$('section').load('./brainsnacks.html');
 	$('.logo').click(function() {
+		$('li.active').removeClass('active');
 		$('section').load('./brainsnacks.html');
+		$('.nav').show();
+		$('.navMobile').show();
 	});
 	$('.logoMobile').click(function() {
 		if (menuOpen) {
 			$('section').show();
 			$('.nav').hide();
+			$('.navMobile').hide();
 			$('li.active').removeClass('active');
 			$('section').load('./brainsnacks.html');
 		} else {
 			$('section').hide();
 			$('.nav').show();
+			$('.navMobile').show();
 		}
 		menuOpen = !menuOpen;
 	})
@@ -25,6 +30,7 @@ $(document).ready(function () {
 		if (menuOpen) {
 			$('section').show();
 			$('.nav').hide();
+			$('.navMobile').hide();
 		}
 		$('li.about').addClass('active');
 		menuOpen = false;
@@ -35,6 +41,7 @@ $(document).ready(function () {
 		if (menuOpen) {
 			$('section').show();
 			$('.nav').hide();
+			$('.navMobile').hide();
 		}
 		$('li.videos').addClass('active');
 		menuOpen = false;
@@ -45,6 +52,7 @@ $(document).ready(function () {
 		if (menuOpen) {
 			$('section').show();
 			$('.nav').hide();
+			$('.navMobile').hide();
 		}
 		$('li.contact').addClass('active');
 		menuOpen = false;
