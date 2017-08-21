@@ -156,6 +156,15 @@ img.SocialMedia {
 	padding-right:calc((100% - 160px)/7);
 }
 
+img.contactImg {
+  width:300px;
+  display:none;
+}
+
+.navMobile {
+  display: none;
+}
+
 .Video {
   	margin-top:20px;
   	text-align:center;

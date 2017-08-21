@@ -4,7 +4,7 @@
 var menuOpen = false;
 
 $(document).ready(function () {
-	$('.navMobile').hide();
+	//$('.navMobile').hide();
 	$('section').load('./brainsnacks.html');
 	$('.logo').click(function() {
 		$('li.active').removeClass('active');
